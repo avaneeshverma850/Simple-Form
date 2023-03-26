@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple form</title>
+    <style>
+        body{
+            background-color: rgb(192, 225, 225);
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+            color: steelblue;
+        }
+        form{
+            margin: 20px auto;
+            width: 320px;
+            color: steelblue;
+        }
+        input{
+            padding: 10px;
+            font-size: inherit;
+        }
+        input[type="text"]{
+            display: block;
+            margin-bottom: 25px;
+            width: 100%;
+            border: 2px solid steelblue;
+        }
+        input[type="password"]{
+            display: block;
+            margin-bottom: 25px;
+            width: 100%;
+            border: 2px solid steelblue;
+        }
+        input[type="email"]{
+            display: block;
+            margin-bottom: 25px;
+            width: 100%;
+            border: 2px solid steelblue;
+        }
+        input[type="radio"]{
+            margin:0 8px 25px 18px;
+        }input[type="radio"]:first-child{
+            margin-left: 0;
+        }
+        input[type="submit"]{
+            width: 344px;
+            height: 45px;
+            border: none;
+            color: white;
+            background-color: steelblue;
+        }
+        input:focus{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Form</h1>
+    <form action="post">
+    
+            <input type="text" placeholder="Firstname" >
+            <br>
+            <input type="text"  placeholder="Lastname">
+            <br>
+            <input type="email" placeholder="Email">
+            <br>
+            <input type="password" placeholder="Password">
+            <br>
+            <input type="password" placeholder="Confirm Password" >
+            <div>
+                <input type="radio" id="male" name="gender"><label for="male">Male</label>
+                <input type="radio" id="female" name="gender" ><label for="female">Female</label>
+            </div>
+            <input type="submit" name="submit">
+                
+    </form>
+    
+</body>
+</html>
